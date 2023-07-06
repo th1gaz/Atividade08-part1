@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pagameto </title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <Script>
+
+        let saldo_final;
+
+        alert ('Bem vindo ao Banco do Brasil')
+        const saldo = prompt('Digite o valor do seu saldo: ')
+        const valor = prompt('Digite o valor da sua compra: ')
+        if(saldo>=valor){
+            alert('Compra realizada com sucesso')
+            saldo_final = `seu saldo agora é de ${saldo-valor} reais `;
+            alert(saldo_final)
+        }else if(valor>saldo){
+            alert('Saldo insuficiente')
+        }
+    </Script>
+
+    <img src="https://i.pinimg.com/originals/db/1f/83/db1f83ac433951440b8706f4b79bf7d0.jpg" width="500px">
+</body>
+</html>
